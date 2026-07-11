@@ -19,19 +19,22 @@ function Navbar() {
           >
             Jobs
           </Link>
-          <a
-            href="#"
+          <Link
+            to="/companies"
             className="text-lg font-medium text-gray-700 flex justify-center items-center border  border-transparent px-5 py-2 rounded-xl hover:text-gray-900 hover:border-red-300 transition-all duration-300"
           >
             Companies
-          </a>
+          </Link>
         </div>
 
         {/* Buttons — pinned to its column's end */}
         <div className="justify-self-end flex gap-5 items-center">
-          <button className="px-8 py-3 cursor-pointer rounded-xl border border-gray-200 hover:border-gray-400 text-sm font-medium text-gray-900 transition-all duration-300 ">
+          <Link
+            to="/login"
+            className="px-8 py-3 cursor-pointer rounded-xl border border-gray-200 hover:border-gray-400 text-sm font-medium text-gray-900 transition-all duration-300 "
+          >
             Log In
-          </button>
+          </Link>
           <Link
             to="/register"
             className="px-8 py-3 rounded-xl cursor-pointer bg-gray-900 text-sm font-semibold text-white hover:bg-gray-800"
