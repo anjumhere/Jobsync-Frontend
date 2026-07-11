@@ -1,0 +1,16 @@
+# Build output
+dist
+dist-ssr
+
+# Dependencies
+node_modules
+
+# Lock file — auto-generated, not meant to be hand-formatted
+package-lock.json
+
+# Logs
+*.log
+
+# Minified/generated files, if any show up later
+*.min.js
+*.min.css
