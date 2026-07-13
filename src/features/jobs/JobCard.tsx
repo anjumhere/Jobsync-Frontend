@@ -29,7 +29,15 @@ const JobCard = ({ job }: { job: Job }) => {
   const company = typeof job.company === "string" ? null : job.company;
   const companyName = company?.name ?? "Unknown Company";
   const salary = formatSalary(job.salaryMin, job.salaryMax);
+  interface Colors {
+    remote: string;
+    onsite: string;
+  }
 
+  const colors: Colors = {
+    remote: "text-red-500",
+    onsite: "text-purple-500",
+  };
   return (
     <div className="bg-white border border-border rounded-xl p-5 w-full max-w-2xl hover:shadow-md transition-shadow">
       <div className="flex items-start justify-between">
@@ -65,7 +73,13 @@ const JobCard = ({ job }: { job: Job }) => {
 
       <div className="flex flex-wrap items-center gap-3 mt-4 text-sm text-muted">
         <span className="flex items-center gap-1">
-          <MapPin size={14} />
+          <MapPin
+            size={14}
+
+            className={
+              job.location === "Remote" ? colors.remote : colors.onsite
+            }
+          />
           {job.location}
         </span>
         <span className="w-1 h-1 rounded-full bg-border" />
