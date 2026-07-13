@@ -54,10 +54,10 @@ const JobCard = ({ job }: { job: Job }) => {
         </div>
 
         <div className="flex gap-2 shrink-0">
-          <button className="px-4 py-1.5 rounded-full border border-border text-sm font-medium text-ink hover:border-ink">
+          <button className="px-4 py-1.5 rounded-full hover:shadow-md cursor-pointer transition-all duration-300 border border-border text-sm font-medium text-ink hover:border-ink">
             Save
           </button>
-          <button className="px-4 py-1.5 rounded-full bg-ink text-white text-sm font-semibold hover:bg-gray-800">
+          <button className="px-4 py-1.5 cursor-pointer hover:shadow-md rounded-full  transition-all duration-300 bg-ink text-white text-sm font-semibold hover:bg-gray-800">
             Apply Now
           </button>
         </div>
