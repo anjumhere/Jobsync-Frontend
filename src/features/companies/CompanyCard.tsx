@@ -2,7 +2,7 @@ import type { Company } from "../../types/models";
 
 const CompanyCard = ({ company }: { company: Company }) => {
   return (
-    <div className="bg-white border border-border rounded-xl p-5">
+    <div className="bg-white border border-border cursor-pointer hover:shadow-md transition-all duration-300 rounded-xl p-5 ">
       <div className="flex items-center gap-3">
         {company.logo ? (
           <img
